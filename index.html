@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/earth-icon.png">
+    <title>planets-fact-site</title>
+</head>
+<body>
+    <header class="header">
+        <div class="top">
+            <h1>THE PLANETS</h1>
+            <img id="menu" src="assets/menu.svg" alt="menu">
+        </div>
+        <nav class="nav-bar">
+            <ul class="planetlist">
+                <li>mercury</li>
+                <li>venus</li>
+                <li>earth</li>
+                <li>mars</li>
+                <li>jupiter</li>
+                <li>saturn</li>
+                <li>uranus</li>
+                <li>neptune</li>
+            </ul>
+        </nav>
+    </header>
+    <hr class="hr">
+    <main class="main">
+        <div class="overView review">
+            <p value="overview" data="planet">overview</p>
+            <p value="structure" data="internal">structure</p>
+            <p value="geology" data="geology">surface</p>
+        </div>
+        <div class="imageANDreview">
+            <section class="section-img">
+                <img id="planetimg" src="" alt="planet-earth">
+                <img id="planetGeology" src="" alt="planet-geology">
+            </section>
+            <section class="section-planetInfo">
+                <div class="wrap">
+                    <h2 id="planetName">mercury</h2>
+                    <p id="planetInfo"></p>
+                    <a id="wikipedia" href="#">Wikipedia</a>
+                </div>
+                <div class="overView-withNumber review">
+                    <p value="overview" data="planet">overview</p>
+                    <p value="structure" data="internal">internal structure</p>
+                    <p value="geology" data="geology">surface geology</p>
+                </div>
+            </section>
+        </div>
+        <section class="section-content">
+            <div class="flex">
+                <p>ROTATION TIME</p>
+                <h3 id="rotation"></h3>
+            </div>
+            <div class="flex">
+                <p>REVOLUTION TIME</p>
+                <h3 id="revolution"></h3>
+            </div>
+            <div class="flex">
+                <p>RADIUS</p>
+                <h3 id="radius"></h3>
+            </div>
+            <div class="flex">
+                <p>AVERAGE TEMP.</p>
+                <h3 id="temp"></h3>
+            </div>
+        </section>
+        <nav id="burgerMenu">
+            <ul class="planetlist just">
+                <div class="arrowPlanet" value="mercury">
+                    <li>mercury</li>
+                    <img src="/assets/arrow.svg" alt="arrow">
+                </div>
+                <div class="arrowPlanet" value="venus">
+                    <li>venus</li>
+                    <img src="/assets/arrow.svg" alt="arrow">
+                </div>
+                <div class="arrowPlanet" value="earth">
+                    <li>earth</li>
+                    <img src="/assets/arrow.svg" alt="arrow">
+                </div>
+                <div class="arrowPlanet" value="mars">
+                    <li>mars</li>
+                    <img src="/assets/arrow.svg" alt="arrow">
+                </div>
+                <div class="arrowPlanet" value="jupiter">
+                    <li>jupiter</li>
+                    <img src="/assets/arrow.svg" alt="arrow">
+                </div>
+                <div class="arrowPlanet" value="saturn">
+                    <li>saturn</li>
+                    <img src="/assets/arrow.svg" alt="arrow">
+                </div>
+                <div class="arrowPlanet" value="uranus">
+                    <li>uranus</li>
+                    <img src="/assets/arrow.svg" alt="arrow">
+                </div>
+                <div class="arrowPlanet" value="neptune">
+                    <li>neptune</li>
+                    <img src="/assets/arrow.svg" alt="arrow">
+                </div>
+            </ul>
+        </nav>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
