@@ -67,6 +67,8 @@ const planetAPI = async (planet) => {
 
                 function handler(event) {
                     if(event.target.tagName === 'P') {
+                        loading.style.display = 'block';
+                        planetImg.style.display = 'none';
                         const attribute = event.target.getAttribute('value')
                         const imgAttribute = event.target.getAttribute('data')
                         planetInfo.textContent = data[attribute].content;
@@ -77,8 +79,14 @@ const planetAPI = async (planet) => {
                         else {
                             planetImg.src = data.images.planet;
                             planetGeology.src = `assets/${planetName.textContent.toLocaleLowerCase()}.png`;
-                            planetGeology.style.display = 'block';
+                            setTimeout(() => {
+                                planetGeology.style.display = 'block';
+                            },1000)
                         }
+                        setTimeout(() => {
+                            loading.style.display = 'none';
+                            planetImg.style.display = 'block';
+                        },1000)
                     }
                 }
                 review.forEach(i => {i.addEventListener('click', handler)})
