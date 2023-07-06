@@ -231,6 +231,7 @@ h3 {
 .arrowPlanet li {
     font-size: 1.5rem;
     color: hsl(0,0%,100%);
+    flex-grow: 1;
 }
 
 .arrowPlanet:not(:last-child) {

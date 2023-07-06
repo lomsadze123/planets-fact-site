@@ -72,9 +72,9 @@ const planetAPI = async (planet) => {
                         planetInfo.textContent = data[attribute].content;
                         wikipedia.href = data[attribute].source;
                         planetGeology.style.display = 'none';
-                        if(imgAttribute === 'planet') planetImg.src = data.images.planet;
-                        else if(imgAttribute === 'internal') planetImg.src = data.images.internal;
-                        else  {
+                        if(imgAttribute === 'internal') planetImg.src = data.images.internal;
+                        else if(imgAttribute === 'planet') planetImg.src = data.images.planet;
+                        else {
                             planetImg.src = data.images.planet;
                             planetGeology.src = `assets/${planetName.textContent.toLocaleLowerCase()}.png`;
                             planetGeology.style.display = 'block';
@@ -88,6 +88,10 @@ const planetAPI = async (planet) => {
             console.log(error);
         }
     }
+
+
+
+
 
 planetList.forEach(i => {
     i.addEventListener('click', (event) => {
